@@ -2,11 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bootstrap practise</title>
+    <title>Bootstrap practise of hl</title>
     <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="./bootstrap-3.3.7-dist/js/jquery.min.js"></script>
     <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
+
+
 <body>
-<!--write your code here-->
+
+<!--轮播（Carousel）-->
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active image-container">
+            <img src="./pictures/01.jpeg" alt="First slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Another example headline.</h1>
+                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p >
+                    <a class="btn btn-large btn-primary" href=" ">Learn more</a >
+                </div>
+            </div>
+        </div>
+        <div class="item image-container">
+            <img src="./pictures/01.jpeg" alt="Second slide">
+            <div class="carousel-caption">
+                <h1>One more for good measure.</h1>
+                <p class="lead">
+                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p >
+                <a class="btn btn-large btn-primary" href=" ">Browse gallary</a >
+            </div>
+
+        </div>
+        <div class="item image-container">
+            <img src="./pictures/01.jpeg" alt="Third slide">
+            <div class="carousel-caption">
+                <h1>Example headline.</h1>
+                <p class="lead">
+                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p >
+                <a class="btn btn-large btn-primary" href=" ">Sign up today</a >
+            </div>
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel"
+       data-slide="prev">
+    </a>
+    <a class="carousel-control right" href="#myCarousel"
+       data-slide="next">
+    </a>
+</div>
+
+
+<!--navigate bar-->
+<div class="container navbarposition ">
+    <nav class="navbar navbar-inverse ">
+        <ul class="nav nav-pills">
+
+            <li role="presentation"><a href="#" class="navbarcolorandstrong" >Project name</a></li>
+            <li role="presentation"class="active"><a href="#" class="navbarcolor">Home</a></li>
+            <li role="presentation"><a href="#" class="navbarcolor">Profile</a></li>
+            <li role="presentation"><a href="#" class="navbarcolor">Messages</a></li>
+
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle navbarcolor" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" >
+                    Dropdown <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </nav>
+</div>
+
+
+
 </body>
 </html>
