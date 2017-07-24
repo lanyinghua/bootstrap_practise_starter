@@ -36,4 +36,6 @@
     color:lightsteelblue;
     text-shadow: 1px 1px 1px #215;
 }
-
+.noborder{
+    border:0;
+}
