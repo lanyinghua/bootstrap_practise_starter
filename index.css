@@ -39,3 +39,9 @@
 .noborder{
     border:0;
 }
+.imgbehind{
+    width:342px;
+    height:500px;
+    overflow: hidden;
+    border-radius:20%
+}
